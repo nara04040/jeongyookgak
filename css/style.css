@@ -61,7 +61,9 @@ body {
     background-image: radial-gradient(circle at 50% 527%, #ff896a, #e23000 119%);
     background-size: contain;
 }
-
+.popup-close {
+    display: none;
+}
 .popup .inner {
     position: relative;
     display: block;
@@ -131,7 +133,6 @@ body {
     z-index: 999999;
 }
 
-.inner .popup-first-exit .close::after {}
 
 /* .popup-first-exit span {
     position: absolute;
@@ -150,6 +151,14 @@ body {
     width: 100%;
     height: 100px;
     background-color: #000;
+}
+
+.header-fix {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .header .inner {
@@ -672,7 +681,6 @@ body {
     border-top: 2px solid #eee;
 }
 
-.footer .inner {}
 
 .f-top {
     position: relative;
@@ -767,7 +775,6 @@ body {
     background-size: cover;
 }
 
-.companey-addr {}
 
 .bottom-right {
     position: absolute;
