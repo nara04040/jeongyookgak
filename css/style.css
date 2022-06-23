@@ -59,7 +59,6 @@ body {
     display: block;
     width: 100%;
     background-image: radial-gradient(circle at 50% 527%, #ff896a, #e23000 119%);
-    /* background: url('../images/top_banner_new-2x.1c59418.png') no-repeat center; */
     background-size: contain;
 }
 
@@ -119,6 +118,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 .inner .popup-first-exit .close::before {
     content: '';
     position: absolute;
@@ -131,9 +131,8 @@ body {
     z-index: 999999;
 }
 
-.inner .popup-first-exit .close::after {
+.inner .popup-first-exit .close::after {}
 
-}
 /* .popup-first-exit span {
     position: absolute;
     top: 48%;
@@ -179,6 +178,7 @@ body {
 
 .logo img {
     display: block;
+    cursor: pointer;
     width: 129px;
     height: 48px;
 }
@@ -216,7 +216,7 @@ body {
 .right-header {
     position: relative;
     display: block;
-    width: 30%;
+    width: 32%;
     height: 100%;
     float: right;
 }
@@ -236,6 +236,7 @@ body {
     margin-top: 18px;
 }
 
+
 .sub-depth-1>li {
     position: relative;
     display: block;
@@ -252,15 +253,14 @@ body {
     line-height: 18px;
 }
 
-.one-bar {
-    position: absolute;
-    top: -8%;
-    right: -100%;
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    width: 100%;
-    height: 100%;
+.right-header .bar {
+    float: left;
+    margin-left: 20px;
+    margin-right: 6px;
+    width: 1px;
+    height: 12px;
+    margin-top: 20px;
+    background-color: #fff;
 }
 
 .login {
@@ -295,17 +295,19 @@ body {
 }
 
 .right-icons {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: block;
     margin-top: 10px;
-    float: left;
 }
 
 .right-icons span {
     display: inline-block;
     padding-left: 20px;
     font-size: 30px;
-    color: #fff
+    color: #fff;
+    cursor: pointer;
 }
 
 /* visual */
@@ -322,6 +324,7 @@ body {
     height: 100%;
     background: url(../images/main_firstgift_logout.29ecc8b.png) no-repeat center;
     background-size: cover;
+    cursor: pointer;
 }
 
 
@@ -346,6 +349,7 @@ body {
     width: 50%;
     height: 100%;
     float: left;
+    cursor: pointer;
 }
 
 .swiper {
@@ -372,6 +376,16 @@ body {
     background-size: contain;
     width: 100%;
     height: 100%;
+}
+
+.no-gmo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 75px;
+    height: 30px;
+    background: url('../images/무항생제.svg') no-repeat;
+    text-align: center;
 }
 
 .swiper-slide-4 {
@@ -454,6 +468,7 @@ body {
     background-size: contain;
     width: 50%;
     height: 100%;
+    cursor: pointer;
 
 }
 
@@ -477,11 +492,13 @@ body {
 .best-items h3 {
     padding-top: 10px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .best-items p {
     font-size: 16px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 .items-list-wrapper {
@@ -671,7 +688,7 @@ body {
     float: left;
 }
 
-.company-law span {
+.company-law a {
     position: relative;
     display: block;
     height: 100%;
