@@ -418,6 +418,7 @@ body {
     background-size: cover;
     color: #000;
     cursor: pointer;
+    z-index: 99;
 }
 
 .swiper-button-prev {
@@ -429,6 +430,7 @@ body {
     background-size: cover;
     color: #000;
     cursor: pointer;
+    z-index: 99;
 }
 
 .swiper-button-next::after,
