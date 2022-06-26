@@ -3,10 +3,19 @@ $(document).ready(function (){
     let popup_close = $('.popup-first-exit')
     let header = $('.header')
     let icon_x = $('.more-div-close')
+    let open_menu = $('.open-menu')
+    let more_wrap = $('.more-wrap')
     // 닫기 눌렀을때 창 닫힘
     popup_close.click(function(){
         popup.addClass('popup-close')
-        icon_x.addClass('more-div-none')
+    })
+    // 햄버거 눌렀을때 나타나기
+    open_menu.click(function(){
+        more_wrap.addClass('open-menu')
+    })
+    // 닫기버튼 눌렀을때 닫히기 
+    icon_x.click(function(){
+        more_wrap.removeClass('open-menu')
     })
     // Scroll
     $(window).scroll(function () {
