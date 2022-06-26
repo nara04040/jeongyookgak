@@ -454,7 +454,22 @@ body {
     display: block;
 }
 
-@media all and (max-width:1100px) {}
+@media all and (max-width:1100px) {
+    .left-header {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-15%);
+    }
+    .left-header .gnb, .right-header {
+        display: none;
+    }
+.material-icons-outlined {
+    position: relative;
+    display: block !important;
+    width: 30px;
+    height: 30px;
+}
+}
 
 /* visual */
 .visual {
