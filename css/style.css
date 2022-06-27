@@ -56,7 +56,7 @@ body {
 
 /* 더보기 */
 .more-wrap {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     display: none;
@@ -65,7 +65,9 @@ body {
     background-color: #fff;
     z-index: 99999;
 }
-
+.more-wrap-hide {
+display: none;
+}
 .more-div {
     position: relative;
     display: block;
