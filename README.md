@@ -2,7 +2,8 @@
 
 😎 What am i doing?
 
-- 0624 : + SEO, reset.css, html5shiv.js, prefixfree.js, respond.js...
+- 0624 : + SEO, reset.css, html5shiv.js, prefixfree.js, respond.js...<br>
+- 0628 : 반응형 수정 , 팝업창 fix, 코드오류 수정...
 <br><br>
 
 사용 skill
