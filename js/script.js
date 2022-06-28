@@ -5,23 +5,19 @@ $(document).ready(function () {
     let icon_x = $('.more-div-close')
     let open_menu = $('.open-menu')
     let more_wrap = $('.more-wrap')
-    // 닫기 눌렀을때 창 닫힘
-    popup_close.click(function () {
-        popup.addClass('popup-close')
-    })
+    let more_container = $('.more_container')
+
     // 햄버거 눌렀을때 나타나기
     open_menu.click(function () {
-        more_wrap.addClass('open-menu')
+        more_wrap.show();
+        more_container.show();
     })
     // 닫기버튼 눌렀을때 닫히기 
     icon_x.click(function () {
-        more_wrap.removeClass('open-menu')
+        more_wrap.hide();
+        more_container.hide();
     })
     // 배경누르면 더보기 사라지기
-    more_wrap.on('click', function(){
-        $('.more-wrap').addClass('.more-wrap-hide')
-        more_wrap.fadeOut();
-    })
 
     $(window).scroll(function () {
         // 위치
@@ -46,6 +42,27 @@ $(document).ready(function () {
 })
 
 window.onload = function () {
+    // 스크롤시 header고정
+    let header = $('.header');
+    let fixY = $('.popup').height();
+
+    $(window).scroll(function(){
+        let temp = $(window).scrollTop();
+        if(temp > fixY) {
+            header.addClass('header-fix');
+            
+        }else {
+            header.removeClass('header-fix')
+        }
+    })
+    // 팝업바 부드럽게 닫히기
+    let popup_close = $('.popup-first-exit')
+    popup_close.click(function(){
+        fixY = 0;
+        $('.popup').slideUp(300)
+    })
+
+
     new Swiper('.sw-event', {
         pagination: {
             el: ".swiper-pagination",
