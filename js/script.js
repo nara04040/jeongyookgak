@@ -5,22 +5,29 @@ $(document).ready(function () {
     let icon_x = $('.more-div-close')
     let open_menu = $('.open-menu')
     let more_wrap = $('.more-wrap')
-    let more_container = $('.more_container')
+    let more_container = $('.more-container')
 
     // 햄버거 눌렀을때 나타나기
     open_menu.click(function () {
         more_wrap.show();
         more_container.show();
-    })
+    });
     // 닫기버튼 눌렀을때 닫히기 
     icon_x.click(function () {
         more_wrap.hide();
         more_container.hide();
-    })
+    });
     // 배경누르면 더보기 사라지기
-
+    more_wrap.click(function(){
+        more_wrap.hide();
+        more_container.hide();
+    });
+    // 다른곳 눌렀을때 닫히는거 막기
+    more_container.click(function(event){
+        event.stopPropagation();
+    });
     
-})
+});
 
 window.onload = function () {
     // 스크롤시 header고정
