@@ -19,48 +19,32 @@ $(document).ready(function () {
     })
     // 배경누르면 더보기 사라지기
 
-    $(window).scroll(function () {
-        // 위치
-        let temp = $(window).scrollTop();
-        // if(popup_close) {
-        //     header.addClass('header-fix')
-        // } else {
-
-        //숨기기
-        if (temp > 60) {
-            header.addClass('header-fix')
-        } else {
-            header.removeClass('header-fix')
-        }
-    })
-    // 새로고침했을때 페이지 상단으로
-    $(function () {
-        setTimeout(function () {
-            scrollTo(0, 0);
-        }, 100)
-    })
+    
 })
 
 window.onload = function () {
     // 스크롤시 header고정
     let header = $('.header');
+    let wrap = $('.wrap');
     let fixY = $('.popup').height();
 
+    // 스크롤 바 세로 상단 값
     $(window).scroll(function(){
         let temp = $(window).scrollTop();
         if(temp > fixY) {
             header.addClass('header-fix');
-            
+            wrap.addClass('wrap-fix');
         }else {
             header.removeClass('header-fix')
-        }
-    })
+            wrap.removeClass('wrap-fix');
+        };
+    });
     // 팝업바 부드럽게 닫히기
     let popup_close = $('.popup-first-exit')
     popup_close.click(function(){
         fixY = 0;
         $('.popup').slideUp(300)
-    })
+    });
 
 
     new Swiper('.sw-event', {

@@ -282,6 +282,13 @@ body {
 }
 
 
+.wrap {
+
+}
+.wrap-fix {
+    padding-top: 60px;
+}
+
 /* header */
 .header {
     position: relative;
