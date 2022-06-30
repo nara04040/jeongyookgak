@@ -10,12 +10,12 @@ $(document).ready(function () {
     // 햄버거 눌렀을때 나타나기
     open_menu.click(function () {
         more_wrap.show();
-        more_container.show();
+        more_container.addClass('more-container-slide');
     });
     // 닫기버튼 눌렀을때 닫히기 
     icon_x.click(function () {
         more_wrap.hide();
-        more_container.hide();
+        more_container.removeClass('more-container-slide');
     });
     // 배경누르면 더보기 사라지기
     more_wrap.click(function(){
