@@ -621,7 +621,7 @@ body {
 
 .event-free-coupon {
     background: url('../images/freshplan.9fe4775.png') no-repeat center;
-    background-size: cover;
+    background-size: contain;
     height: 10vw;
     width: 50%;
     float: right;
