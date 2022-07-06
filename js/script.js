@@ -56,43 +56,46 @@ $(document).ready(function () {
     // 객체 예시
     let bestItemsList = [{
         link: '#',
-        pic: 'porkbelly-fresh-list.png',
+        pic: 'images/porkbelly-fresh-list.png',
         title: '초신선 돼지 삼겹살 구이용',
         itemDesc: '기준가 23,400원/600g'
     }, {
         link: '#',
-        pic: 'chickef-cut-list.png',
+        pic: 'images/chickef-cut-list.png',
         title: '초신선 닭볶음탕',
         itemDesc: '기준가 6,700원/950g'
     }, {
         link: '#',
-        pic: 'porkcutlet-sirloin-list.png',
+        pic: 'images/porkcutlet-sirloin-list.png',
         title: '초신선 등심 돈까스',
         itemDesc: '기준가 11,800원/770g'
     }, {
         link: '#',
-        pic: 'egg-fresh-list.png',
+        pic: 'images/egg-fresh-list.png',
         title: '초신선 동물복지 무항생제 유정란',
         itemDesc: '기준가 7,800원/12구'
     }, {
         link: '#',
-        pic: 'milk-fresh-list.png',
+        pic: 'images/milk-fresh-list.png',
         title: '초신선 무항생제 우유',
         itemDesc: '기준가 3,600원/900ml'
     }, {
         link: '#',
-        pic: 'baby-hanuround-bmix-list.png',
+        pic: 'images/baby-hanuround-bmix-list.png',
         title: '초신선 무항생제 이유식용 한우 우둔 다짐육',
         itemDesc: '기준가 15,300원/180g'
     }];
+
     let bestItemsData = $('.best-items-list');
     let bestItemsResult = '';
-    for (let i = 0; i < bestItemsList; i++) {
+    for (let i = 0; i < bestItemsList.length; i++) {
         let data = bestItemsList[i];
         let temp = `
                     <li>
                         <a href="${data.link}">
-                            <div class="items-img-1"></div>
+                            <div class="items-img-1">
+                            <img src="${data.pic}" alt="">
+                            </div>
                             <div class="cart-img">
                                 <span class="material-icons-outlined">
                                     shopping_cart
@@ -105,7 +108,7 @@ $(document).ready(function () {
     `;
         bestItemsResult += temp;
     }
-    bestItemsData.html(dataItemsResult)
+    bestItemsData.html(bestItemsResult)
 
 });
 
