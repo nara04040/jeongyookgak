@@ -758,74 +758,75 @@ body {
     color: #9b9b9b;
 
 }
-.items-img-1>img {
+
+.items-img-1 img {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
     display: block;
-    background: url('../images/porkbelly-fresh-list.png') no-repeat center;
+    /* background: url('../images/porkbelly-fresh-list.png') no-repeat center; */
     background-size: cover;
     width: 280px;
     height: 250px;
 }
 
 
-.items-img-2 {
+.items-img-2 img {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
     display: block;
-    background: url('../images/chickef-cut-list.png') no-repeat center;
+    /* background: url('../images/chickef-cut-list.png') no-repeat center; */
     background-size: cover;
     width: 280px;
     height: 250px;
 }
 
-.items-img-3 {
+.items-img-3 img {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
     display: block;
-    background: url('../images/porkcutlet-sirloin-list.png') no-repeat center;
+    /* background: url('../images/porkcutlet-sirloin-list.png') no-repeat center; */
     background-size: cover;
     width: 280px;
     height: 250px;
 }
 
-.items-img-4 {
+.items-img-4 img {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
     display: block;
-    background: url('../images/egg-fresh-list.png') no-repeat center;
+    /* background: url('../images/egg-fresh-list.png') no-repeat center; */
     background-size: cover;
     width: 280px;
     height: 250px;
 }
 
-.items-img-5 {
+.items-img-5 img {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
     display: block;
-    background: url('../images/milk-fresh-list.png') no-repeat center;
+    /* background: url('../images/milk-fresh-list.png') no-repeat center; */
     background-size: cover;
     width: 280px;
     height: 250px;
 }
 
-.items-img-6 {
+.items-img-6 img {
     position: absolute;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
     display: block;
-    background: url('../images/baby-hanuround-bmix-list.png') no-repeat center;
+    /* background: url('../images/baby-hanuround-bmix-list.png') no-repeat center; */
     background-size: cover;
     width: 280px;
     height: 250px;
